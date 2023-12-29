@@ -6,7 +6,7 @@
   <body>
     <div class="container">
       <div>
-        <h1 class="header_text">Yeeyy ! Finally</h1>
+        <h1 class="header_text">Yeeyy ! Finally...❤️💖</h1>
       </div>
       <div class="gif_container">
         <img
@@ -15,8 +15,26 @@
         />
       </div>
       <button class="btn" id="yesButton" onclick="nextPage()">
-        <img src="kishan.jpg" alt="">
+        Let's  Fix A Date!
       </button>
     </div>
+    <script>
+        function nextPage() {
+          window.location.href = "heart.html";
+        }
+
+        function moveButton() {
+          var x =
+            Math.random() *
+            (window.innerWidth -
+              document.getElementById("noButton").offsetWidth);
+          var y =
+            Math.random() *
+            (window.innerHeight -
+              document.getElementById("noButton").offsetHeight);
+          document.getElementById("noButton").style.left = `${x}px`;
+          document.getElementById("noButton").style.top = `${y}px`;
+        }
+      </script>
   </body>
 </html>
